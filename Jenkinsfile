@@ -6,9 +6,9 @@ pipeline {
         DESIRED_COUNT= "1"
         BRANCH_NAME = "${GIT_BRANCH.split('origin/')[1].replaceAll('/','-')}"
         //DOCKER_IMAGE_TAG = "${BRANCH_NAME}_${GIT_COMMIT.take(7)}"
-        ECR_REPO_URL = "473620331716.dkr.ecr.ap-south-1.amazonaws.com/ihub-demo-1"
-        SERVICE_NAME = "iHUB-Demo"
-        FAMILY = "iHUB-Demo-1"
+        ECR_REPO_URL = "473620331716.dkr.ecr.ap-south-1.amazonaws.com/account-demo-1"
+        SERVICE_NAME = "Account-Demo"
+        FAMILY = "Account-Demo-1"
     }
     stages {
        stage('Checkout GitHub') {
@@ -16,7 +16,7 @@ pipeline {
              sh '''
              env
               '''
-             git branch: 'main', url: 'https://github.com/kishorkumbhar/iHUB.git'
+             git branch: 'main', url: 'https://github.com/kishorkumbhar/iAccount.git'
             }
         }
         stage('Setting Up Docker Tag , Build and Push Image to ECR'){
