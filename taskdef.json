@@ -1,8 +1,8 @@
 {
-    "family": "iHUB-Demo-1",
+    "family": "Account-Demo-1",
     "executionRoleArn": "arn:aws:iam::473620331716:role/ecsTaskExecutionRole",
     "containerDefinitions": [{
-            "name": "iHUB-Demo-1",
+            "name": "Account-Demo-1",
             "image": "ECR_REPO_URL:DOCKER_IMAGE_TAG",
             "privileged": true,
             "memoryReservation": 256,
@@ -14,7 +14,7 @@
     "logConfiguration": {
                     "logDriver": "awslogs",
                     "options": {
-                            "awslogs-group": "/ecs/iHUB-Demo-1",
+                            "awslogs-group": "/ecs/Account-Demo-1",
                             "awslogs-region": "ap-south-1",
                             "awslogs-stream-prefix": "ecs"
                     }
