@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     @RequestMapping ("/account")
     public String index(){
-        return "Springboot Application Account-Demo :)";
+        return "Hi Rani & Dipanita :)";
     }
 }
