@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-    @RequestMapping ("/account")
+    @RequestMapping ("/")
     public String index(){
-        return "Hi Rani & Dipanita v2";
+        return "Hi from private API";
     }
 }
